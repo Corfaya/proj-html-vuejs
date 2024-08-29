@@ -1,8 +1,14 @@
 <script>
 import Banner from './partials/Banner.vue';
+import List from './partials/List.vue';
+import { listItems } from '../data/arrays';
 export default {
   components: {
-    Banner
+    Banner,
+    List
+  },
+  methods: {
+    listItems
   }
 }
 </script>
@@ -25,72 +31,8 @@ export default {
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Item
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Item</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Item
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Item</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Item
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Item</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Item
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Item</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Item
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Item</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Item
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Item</a></li>
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+              <List />
+              
             </ul>
 
           </div>
