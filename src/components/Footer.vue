@@ -1,13 +1,17 @@
 <script>
 import Socials from './partials/Socials.vue';
-import { socials } from '../data/arrays';
+import ListsFooter from './partials/ListsFooter.vue';
+
+import { socials, listsFooter } from '../data/arrays';
 export default {
     components: {
-        Socials
+        Socials,
+        ListsFooter
     },
     data() {
         return {
-            socials
+            socials,
+            listsFooter
         }
     },
 }
@@ -29,25 +33,7 @@ export default {
                     <Socials v-for="(soc, i) in socials" :key="`s-${i}`" :socialIcon="soc"/>
                   </div>
             </div>
-            <div class="col-2">
-                <h6 class="fw-bold">Explore</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#">Start here</a></li>
-                    <li><a href="#">Success story</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="col-2">
-                <h6 class="fw-bold">Information</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#">Membership</a></li>
-                    <li><a href="#">Purchase guide</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                    <li><a href="#">Terms of services</a></li>
-                </ul>
-            </div>
+            <ListsFooter v-for="(l, i) in listsFooter" :key="`lf-${i}`" :lists="l" />
             <div class="col-4">
                 <h6 class="fw-bold">Instagram <span>@maxcoach</span></h6>
                 <div class="d-flex mw-100px mt-4">
