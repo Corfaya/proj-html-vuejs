@@ -37,4 +37,23 @@ const listItems = [
     }
 ]
 
-export { listItems }
+const socials = [
+    {
+        url: "https://www.facebook.com/",
+    class: "fa-brands fa-facebook-f"
+    },
+    {
+        url: "https://x.com/home",
+    class: "fa-brands fa-twitter"
+    },
+    {
+        url: "https://www.instagram.com/",
+    class: "fa-brands fa-instagram"
+    },
+    {
+        url: "https://www.linkedin.com/",
+    class: "fa-brands fa-linkedin"
+    },
+]
+
+export { listItems, socials }
