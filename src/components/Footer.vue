@@ -24,6 +24,7 @@ export default {
                     <li>+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</li>
                     <li>support@maxcoach.com</li>
                 </ul>
+                <!-- Dynamic social list -->
                 <div class="d-none d-lg-flex" role="search">
                     <Socials v-for="(soc, i) in socials" :key="`s-${i}`" :socialIcon="soc"/>
                   </div>
@@ -31,20 +32,20 @@ export default {
             <div class="col-2">
                 <h6 class="fw-bold">Explore</h6>
                 <ul class="list-unstyled">
-                    <li><a href="">Start here</a></li>
-                    <li><a href="">Success story</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Courses</a></li>
-                    <li><a href="">Contact us</a></li>
+                    <li><a href="#">Start here</a></li>
+                    <li><a href="#">Success story</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact us</a></li>
                 </ul>
             </div>
             <div class="col-2">
                 <h6 class="fw-bold">Information</h6>
                 <ul class="list-unstyled">
-                    <li><a href="">Membership</a></li>
-                    <li><a href="">Purchase guide</a></li>
-                    <li><a href="">Privacy policy</a></li>
-                    <li><a href="">Terms of services</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Purchase guide</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of services</a></li>
                 </ul>
             </div>
             <div class="col-4">

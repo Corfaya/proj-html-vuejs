@@ -1,16 +1,19 @@
 <script>
 import Banner from './partials/Banner.vue';
-import List from './partials/List.vue';
-import { listItems } from '../data/arrays';
+import List from './partials/ListHeader.vue';
+import Socials from './partials/Socials.vue';
+import { listItems, socials } from '../data/arrays';
 
 export default {
   components: {
     Banner,
-    List
+    List,
+    Socials
   },
   data() {
     return {
-      listItems
+      listItems,
+      socials
     }
   },
 }
@@ -34,24 +37,17 @@ export default {
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <!-- dynamic list -->
+              <!-- dynamic menu list items -->
               <List v-for="(l, i) in listItems" :key="`l-${i}`" :list="l"/>
-              
             </ul>
-
           </div>
+          <!-- Dynamic social list -->
           <div class="d-none d-lg-flex" role="search">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
+            <Socials v-for="(soc, i) in socials" :key="`s-${i}`" :socialIcon="soc"/>
           </div>
         </div>
       </nav>
     </div>
-
-
-
   </header>
 </template>
 
