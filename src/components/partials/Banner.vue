@@ -28,6 +28,10 @@ export default {
       background-color: $orange_main;
       padding: 5px 40px;
       font-size: 14px;
+      &:hover {
+        background-color: $sky;
+      }
     }
+    
 }
 </style>

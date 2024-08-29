@@ -2,14 +2,17 @@
 import Banner from './partials/Banner.vue';
 import List from './partials/List.vue';
 import { listItems } from '../data/arrays';
+
 export default {
   components: {
     Banner,
     List
   },
-  methods: {
-    listItems
-  }
+  data() {
+    return {
+      listItems
+    }
+  },
 }
 </script>
 
@@ -31,7 +34,8 @@ export default {
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
-              <List />
+              <!-- dynamic list -->
+              <List v-for="(l, i) in listItems" :key="`l-${i}`" :list="l"/>
               
             </ul>
 
