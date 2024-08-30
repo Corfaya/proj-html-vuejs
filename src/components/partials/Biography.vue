@@ -29,7 +29,7 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="bg-image">
+        <!-- <div class="bg-image"> -->
             <div class="container">
                 <div class="decoration position-relative">
                     <img class="decos first-img" src="../../assets/img/maxcoach-shape-05.png" alt="">
@@ -52,7 +52,7 @@ export default {
                     </div>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 </template>
 <style lang="scss" scoped>
