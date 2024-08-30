@@ -10,6 +10,13 @@ export default {
         <div class="obj-fit first"><img src="../../assets/img/artist-course-05-480x480.jpg" alt=""></div>
         <div class="obj-fit second"><img src="../../assets/img/artist-course-08-480x480.jpg" alt=""></div>
         <div class="obj-fit third"><img src="../../assets/img/artist-hero-image-04.jpg" alt=""></div>
+        <!-- ICONS -->
+        <div class="d-flex flex-column align-items-center icons-box position-absolute">
+            <i class="fa-solid fa-ruler-combined"></i>
+            <i class="fa-regular fa-life-ring"></i>
+            <i class="fa-solid fa-book"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
         <div class="container d-flex justify-content-center">
             <!-- TEXT -->
             <div class="d-flex flex-column align-items-center hero-text-box">
@@ -61,6 +68,19 @@ export default {
         &.third {
             bottom: 60px;
             right: 150px;
+        }
+    }
+
+    .icons-box {
+        background-color: $white;
+        padding: 5px;
+        border-radius: 8px;
+        right: 0;
+        top: 100px;
+        
+
+        i {
+            margin: 8px;
         }
     }
 
