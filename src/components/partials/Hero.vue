@@ -23,11 +23,11 @@ export default {
 @use "../../style/partials/vars" as *;
 .bg-hero {
     background-color: $hero;
-    padding: 150px 0;
-    background-image: url("../../assets/img/artist-shape-01.png"), url("../../assets/img/artist-shape-02-300x162.png");
+    padding: 200px 0;
+    background-image: url("../../assets/img/artist-shape-01.png"), url("../../assets/img/artist-shape-02-300x162.png"), url("../../assets/img/artist-hero-image-03.png"), url("../../assets/img/artist-shape-04.png"), url("../../assets/img/artist-shape-03.png"), url("../../assets/img/artist-shape-05.png");
     background-repeat: no-repeat;
-    background-position: right, left top;
-    background-size: contain, 700px 300px;
+    background-position: right, left top, left 500px bottom 10%, right 5% top 20%, left, right 80px bottom;
+    background-size: contain, 900px 400px, 10%, 100px, 300px, 250px;
     .hero-text-box {
         gap: 10px;
         max-width: 350px;
