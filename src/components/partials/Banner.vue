@@ -10,7 +10,7 @@ export default {
         <button type="button" class="btn text-white ms-4 fw-bold">Get ticket</button>
       </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 @use "../../style/partials/vars" as *;
 .banner {
     background-color: $grey;

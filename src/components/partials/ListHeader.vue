@@ -17,5 +17,5 @@ export default {
         </ul>
     </li>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 </style>

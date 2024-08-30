@@ -11,7 +11,7 @@ export default {
         <a :href="socialIcon.url"></a>
     </i>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 i:first-of-type {
     margin-left: 0;
 }

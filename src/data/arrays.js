@@ -41,7 +41,7 @@ const listsFooter = [
     {
         title: "Explore",
         titleClass: "fw-bolder",
-        col: "col-2",
+        col: "col-6 col-lg-2",
         list: [
             {
                 paragraph: "Start here",
@@ -68,7 +68,7 @@ const listsFooter = [
     {
         title: "Information",
         titleClass: "fw-bolder",
-        col: "col-2",
+        col: "col-6 col-lg-2",
         list: [
             {
                 paragraph: "Membership",

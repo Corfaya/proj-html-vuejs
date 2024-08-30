@@ -2,9 +2,6 @@
 export default {
     props: {
         lists: Object
-    },
-    created() {
-        console.log(this.lists)
     }
 }
 </script>
@@ -18,5 +15,11 @@ export default {
         </ul>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
+@use "../../style/partials/vars" as *;
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: $black;
+}
 </style>
