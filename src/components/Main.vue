@@ -1,28 +1,30 @@
 <script>
+import Hero from './partials/Hero.vue';
 export default {
-
+    components: {
+        Hero
+    }
 }
 </script>
 
 <template>
-<main class="my-3">
-    <!-- HERO -->
+    <main class="my-3">
+        <!-- HERO -->
+        <Hero />
+        <!-- First section -->
 
-    <!-- First section -->
+        <!-- Second Section -->
 
-    <!-- Second Section -->
+        <!-- Video Section -->
 
-    <!-- Video Section -->
+        <!-- Carousel -->
 
-    <!-- Carousel -->
+        <!-- Images Grid -->
 
-    <!-- Images Grid -->
+        <!-- Imgs positions section -->
 
-    <!-- Imgs positions section -->
-
-    <!-- Images Grid 2 -->
-</main>
+        <!-- Images Grid 2 -->
+    </main>
 </template>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
