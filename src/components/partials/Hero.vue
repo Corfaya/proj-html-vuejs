@@ -1,6 +1,11 @@
 <script>
+import { jumboIconsClass } from '../../data/arrays';
 export default {
-
+    data() {
+        return {
+            jumboIconsClass
+        }
+    },
 }
 </script>
 <template>
@@ -12,10 +17,7 @@ export default {
         <div class="obj-fit third"><img src="../../assets/img/artist-hero-image-04.jpg" alt=""></div>
         <!-- ICONS -->
         <div class="d-flex flex-column align-items-center icons-box position-absolute">
-            <i class="fa-solid fa-ruler-combined"></i>
-            <i class="fa-regular fa-life-ring"></i>
-            <i class="fa-solid fa-book"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i v-for="jumbo, i in jumboIconsClass" :class="jumbo"></i>
         </div>
         <div class="container d-flex justify-content-center">
             <!-- TEXT -->
@@ -41,10 +43,11 @@ export default {
     background-repeat: no-repeat;
     background-position: right, left top, left 500px bottom 10%, right 5% top 20%, left, right 80px bottom;
     background-size: contain, 900px 400px, 10%, 100px, 300px, 250px;
-    
+
     .obj-fit {
         position: absolute;
         box-shadow: 0px 2px 20px 3px rgb(151, 150, 150);
+
         &.first {
             max-width: 150px;
             height: 180px;
@@ -54,7 +57,8 @@ export default {
             filter: contrast(110%)
         }
 
-        &.second, &.third {
+        &.second,
+        &.third {
             max-width: 200px;
             height: 270px;
             z-index: 1;
@@ -77,10 +81,10 @@ export default {
         border-radius: 8px;
         right: 0;
         top: 100px;
-        
+
 
         i {
-            margin: 8px;
+            margin: 8px;;
         }
     }
 
@@ -107,6 +111,7 @@ export default {
             width: 200px;
             background-color: $orange_main;
             padding: 10px;
+
             &:hover {
                 background-color: $sky;
             }

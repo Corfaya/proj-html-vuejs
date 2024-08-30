@@ -127,4 +127,6 @@ const instagramPhotos = [
     }
 ]
 
-export { listItems, socials, listsFooter, instagramPhotos }
+const jumboIconsClass = ["fa-solid fa-ruler-combined", "fa-regular fa-life-ring", "fa-solid fa-book", "fa-solid fa-cart-shopping"]
+
+export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass }
