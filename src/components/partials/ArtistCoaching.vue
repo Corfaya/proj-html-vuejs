@@ -68,6 +68,7 @@ export default {
         transform: rotate(180deg);
         transform: scaleY(-1);
         left: -250px;
+        z-index: -1;
     }
 
     .text-box {

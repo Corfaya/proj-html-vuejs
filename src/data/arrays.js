@@ -109,4 +109,22 @@ const socials = [
     },
 ]
 
-export { listItems, socials, listsFooter }
+const instagramPhotos = [
+    {
+        path: "120084500_197897808368764_8114555493043279565_n.jpg",
+        alt: "Instagram photo",
+        class: "img-fluid",
+    },
+    {
+        path: "120012142_177596140500760_8623485824101406058_n.jpg",
+        alt: "Instagram photo",
+        class: "img-fluid mx-3",
+    },
+    {
+        path: "120099363_364334431619755_7198812647386067017_n.jpg",
+        alt: "Instagram photo",
+        class: "img-fluid d-none d-md-block",
+    }
+]
+
+export { listItems, socials, listsFooter, instagramPhotos }

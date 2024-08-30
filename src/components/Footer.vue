@@ -2,17 +2,21 @@
 import Socials from './partials/Socials.vue';
 import ListsFooter from './partials/ListsFooter.vue';
 
+import { instagramPhotos } from '../data/arrays';
 import { socials, listsFooter } from '../data/arrays';
+import FooterImages from './partials/FooterImages.vue';
 
 export default {
     components: {
         Socials,
-        ListsFooter
+        ListsFooter,
+        FooterImages
     },
     data() {
         return {
             socials,
-            listsFooter
+            listsFooter,
+            instagramPhotos
         }
     },
 }
@@ -41,9 +45,7 @@ export default {
                 <div class="col-6 col-lg-4">
                     <h6 class="fw-bold">Instagram <span class="fs-14">@maxcoach</span></h6>
                     <div class="d-flex mw-100px mt-4">
-                        <img class="img-fluid" src="../assets/img/120084500_197897808368764_8114555493043279565_n.jpg" alt="">
-                        <img class="img-fluid mx-3" src="../assets/img/120012142_177596140500760_8623485824101406058_n.jpg" alt="">
-                        <img class="img-fluid d-none d-md-block" src="../assets/img/120099363_364334431619755_7198812647386067017_n.jpg" alt="">
+                        <FooterImages v-for="(photo, i) in instagramPhotos" :key="`ph-(i)`" :photo="photo"/>
                     </div>
                 </div>
             </div>
@@ -61,6 +63,10 @@ export default {
 <style lang="scss" scoped>
 @use "../style/partials/vars" as *;
 @use "../style/partials/utilities" as *;
+footer {
+    background-color: $white;
+}
+
 ul {
     li {
         margin-top: 10px;
