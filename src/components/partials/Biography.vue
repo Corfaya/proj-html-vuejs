@@ -29,7 +29,11 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="decoration">
+            <div class="decoration position-relative">
+                <img class="decos first-img"src="../../assets/img/maxcoach-shape-05.png" alt="">
+                <img class="decos second-img"src="../../assets/img/artist-shape-01.png" alt="">
+                <img class="decos third-img"src="../../assets/img/maxcoach-shape-12.png" alt="">
+                <div class="rounded-circle"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -80,6 +84,38 @@ export default {
 }
 
 .decoration {
+    .decos {
+        width: 100px;
+        position: absolute;
+        z-index: -999;
+        
+        &.first-img {
+            top: 80px;
+            left: 280px;
+        }
+
+        &.second-img {
+            top: 80px;
+            left: 230px;
+            filter: brightness(0) saturate(100%) invert(39%) sepia(73%) saturate(4867%) hue-rotate(179deg) brightness(93%) contrast(102%);
+            transform: rotate(90deg)
+        }
+
+        &.third-img {
+            bottom: 80px;
+            right: 250px;
+        }
+    }
+
+    .rounded-circle {
+        border: 7px solid $circle;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 1000;
+        right: 250px;
+        top: 150px;
+    }
     .col-12 {
         .d-flex {
             margin: 100px 0;
