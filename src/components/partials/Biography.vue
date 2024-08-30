@@ -84,6 +84,7 @@ export default {
 }
 
 .decoration {
+    
     .decos {
         width: 100px;
         position: absolute;
