@@ -46,7 +46,7 @@ export default {
 
     .obj-fit {
         position: absolute;
-        box-shadow: 0px 2px 20px 3px rgb(151, 150, 150);
+        box-shadow: 0px 2px 20px 3px rgb(174, 174, 174);
 
         &.first {
             max-width: 150px;

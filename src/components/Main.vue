@@ -20,7 +20,7 @@ export default {
         <!-- Second Section -->
         <Biography />
         <!-- Video Section -->
-
+        
         <!-- Carousel -->
 
         <!-- Images Grid -->
