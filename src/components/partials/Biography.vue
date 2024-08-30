@@ -5,7 +5,6 @@ export default {
 </script>
 <template>
     <div class="bg-transparent mt-4">
-        <!-- <img class="img-separator" src="../../assets/img/artist-shape-02.png" alt=""> -->
         <div class="container">
             <div class="row">
                 <div class="col-5">
@@ -29,19 +28,24 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="decoration position-relative">
-                <img class="decos first-img"src="../../assets/img/maxcoach-shape-05.png" alt="">
-                <img class="decos second-img"src="../../assets/img/artist-shape-01.png" alt="">
-                <img class="decos third-img"src="../../assets/img/maxcoach-shape-12.png" alt="">
-                <div class="rounded-circle"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="d-flex justify-content-center">
-                                <div class="obj-fit position-relative">
-                                    <img class="img-fluid" src="../../assets/img/artist-video-poster.jpg"
-                                        alt="Video Poster">
-                                    <img class="position-absolute" src="../../assets/img/icon-youtube-play.png" alt="Icon Youtube">
+        </div>
+        <div class="bg-image">
+            <div class="container">
+                <div class="decoration position-relative">
+                    <img class="decos first-img" src="../../assets/img/maxcoach-shape-05.png" alt="">
+                    <img class="decos second-img" src="../../assets/img/artist-shape-01.png" alt="">
+                    <img class="decos third-img" src="../../assets/img/maxcoach-shape-12.png" alt="">
+                    <div class="rounded-circle"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex justify-content-center">
+                                    <div class="obj-fit position-relative">
+                                        <img class="img-fluid" src="../../assets/img/artist-video-poster.jpg"
+                                            alt="Video Poster">
+                                        <img class="position-absolute" src="../../assets/img/icon-youtube-play.png"
+                                            alt="Icon Youtube">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,28 +87,46 @@ export default {
 
 }
 
+.bg-image {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -50%;
+        left: -50%;
+        z-index: -1;
+        background-image: url("../../assets/img/artist-shape-01.png"), url("../../assets/img/artist-shape-01.png"), url("../../assets/img/artist-shape-01.png");
+        background-repeat: no-repeat;
+        background-position: 500px -300px, center -300px, 1700px -300px;
+        transform: rotate(180deg);
+
+    }
+}
+
 .decoration {
-    
     .decos {
         width: 100px;
         position: absolute;
         z-index: -999;
-        
+
         &.first-img {
             top: 80px;
-            left: 280px;
+            left: 350px;
         }
 
         &.second-img {
-            top: 80px;
-            left: 230px;
+            top: 90px;
+            left: 300px;
             filter: brightness(0) saturate(100%) invert(39%) sepia(73%) saturate(4867%) hue-rotate(179deg) brightness(93%) contrast(102%);
             transform: rotate(90deg)
         }
 
         &.third-img {
             bottom: 80px;
-            right: 250px;
+            right: 350px;
         }
     }
 
@@ -114,13 +136,14 @@ export default {
         height: 80px;
         position: absolute;
         z-index: 1000;
-        right: 250px;
-        top: 150px;
+        right: 350px;
+        top: 180px;
     }
+
     .col-12 {
         .d-flex {
             margin: 100px 0;
-    
+
             .obj-fit {
                 width: 500px;
                 box-shadow: 0px 5px 15px 1px rgb(174, 174, 174);
