@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 @use "../style/partials/vars" as *;
+@use "../style/partials/utilities" as *;
 
 header {
   nav {
