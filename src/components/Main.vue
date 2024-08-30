@@ -1,10 +1,12 @@
 <script>
 import Hero from './partials/Hero.vue';
 import ArtistCoaching from './partials/ArtistCoaching.vue';
+import Biography from './partials/Biography.vue';
 export default {
     components: {
         Hero,
-        ArtistCoaching
+        ArtistCoaching,
+        Biography
     }
 }
 </script>
@@ -16,7 +18,7 @@ export default {
         <!-- First section -->
         <ArtistCoaching />
         <!-- Second Section -->
-
+        <Biography />
         <!-- Video Section -->
 
         <!-- Carousel -->
