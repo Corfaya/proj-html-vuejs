@@ -39,27 +39,27 @@ export default {
         position: absolute;
         box-shadow: 0px 2px 20px 3px rgb(151, 150, 150);
         &.first {
-            max-width: 200px;
-            height: 220px;
+            max-width: 150px;
+            height: 180px;
             z-index: 2;
-            left: 150px;
-            bottom: 50px;
+            left: 80px;
+            bottom: 60px;
             filter: contrast(110%)
         }
 
         &.second, &.third {
-            max-width: 250px;
-            height: 300px;
+            max-width: 200px;
+            height: 270px;
             z-index: 1;
         }
 
         &.second {
-            top: 50px;
-            left: 320px;
+            top: 80px;
+            left: 200px;
         }
 
         &.third {
-            bottom: 50px;
+            bottom: 60px;
             right: 150px;
         }
     }
