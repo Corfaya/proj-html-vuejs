@@ -97,6 +97,7 @@ export default {
         margin-left: 50px;
         border-bottom: 3px solid rgba(155, 155, 155, 0.25);
         input {
+            width: 90%;
         background-color: transparent;
         border: none;
         padding: 10px 0;
