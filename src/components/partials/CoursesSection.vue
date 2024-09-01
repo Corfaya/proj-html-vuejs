@@ -13,7 +13,7 @@ export default {
 }
 </script>
 <template>
-    <div class="bg-white position-relative py-5">
+    <div class="bg-white py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">

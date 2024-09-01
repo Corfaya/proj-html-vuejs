@@ -4,6 +4,7 @@ import ArtistCoaching from './partials/ArtistCoaching.vue';
 import Biography from './partials/Biography.vue';
 import Carousel from './partials/Carousel.vue';
 import OnlineCourses from './partials/CoursesSection.vue';
+import Blog from './partials/Blog.vue';
 
 export default {
     components: {
@@ -11,7 +12,8 @@ export default {
         ArtistCoaching,
         Biography,
         Carousel,
-        OnlineCourses
+        OnlineCourses,
+        Blog
     }
 }
 </script>
@@ -29,7 +31,7 @@ export default {
         <!-- Images Grid -->
         <OnlineCourses />
         <!-- Imgs positions section -->
-
+        <Blog />
         <!-- Images Grid 2 -->
     </main>
 </template>
