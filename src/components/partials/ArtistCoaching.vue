@@ -10,9 +10,9 @@ export default {
             <div class="row">
                 <div class="col-12">
                     <div class="d-flex justify-content-center">
-                        <div class="text-box text-center mb-4">
-                            <h2 class="m-0 fs-22 font-art">Artist coaching</h2>
-                            <h2 class="fs-22 secondary-font">I understand what it takes to create. <br> I can help you with</h2>
+                        <div class="text-box text-center mb-4 fs-34">
+                            <h2 class="m-0 font-art">Artist coaching</h2>
+                            <h2 class="secondary-font">I understand what it takes to create. I can help you with</h2>
                         </div>
                     </div>
                 </div>
@@ -72,8 +72,10 @@ export default {
     }
 
     .text-box {
-        max-width: 400px;
-
+        max-width: 500px;
+        .secondary-font {
+            line-height: 50px;
+        }
         .font-art {
             font-family: $artistic_font;
             color: $sky;

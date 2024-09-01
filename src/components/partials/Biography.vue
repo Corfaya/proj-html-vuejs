@@ -12,13 +12,13 @@ export default {
                         <div class="quot-box">
                             <img src="../../assets/img/artist-quote-icon.png" alt="Quotation">
                         </div>
-                        <h2 class="text-center fw-bold">I coach and mentor visual artists, like you, to Create Like You
+                        <h2 class="text-center fw-bold fs-50">I coach and mentor visual artists, like you, to Create Like You
                             Mean It</h2>
-                        <h2 class="m-0 fs-22 font-art pt-4">Martin Garrix</h2>
+                        <h2 class="m-0 fs-30 font-art pt-4">Martin Garrix</h2>
                     </div>
                 </div>
                 <div class="col-7">
-                    <div class="ms-5">
+                    <div class="ms-5 mt-3 pt-5">
                         <p>As a coach and mentor, my ultimate goal is to motivate visual artists toward inspired action.
                             I help you get you back on track to being the productive, creative, meaningful and authentic
                             artist you truly want to be. I support artists in crafting and living a creative life as
@@ -32,16 +32,16 @@ export default {
         <!-- <div class="bg-image"> -->
             <div class="container">
                 <div class="decoration position-relative">
-                    <img class="decos first-img" src="../../assets/img/maxcoach-shape-05.png" alt="">
-                    <img class="decos second-img" src="../../assets/img/artist-shape-01.png" alt="">
-                    <img class="decos third-img" src="../../assets/img/maxcoach-shape-12.png" alt="">
+                    <img class="decos first-img" src="../../assets/img/maxcoach-shape-05.png" alt="Decoration">
+                    <img class="decos second-img" src="../../assets/img/artist-shape-01.png" alt="Decoration">
+                    <img class="decos third-img" src="../../assets/img/maxcoach-shape-12.png" alt="Decoration">
                     <div class="rounded-circle"></div>
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
                                 <div class="d-flex justify-content-center">
-                                    <div class="obj-fit position-relative">
-                                        <img class="img-fluid" src="../../assets/img/artist-video-poster.jpg"
+                                    <div class="obj-fit rounded position-relative">
+                                        <img class="img-fluid rounded" src="../../assets/img/artist-video-poster.jpg"
                                             alt="Video Poster">
                                         <img class="position-absolute" src="../../assets/img/icon-youtube-play.png"
                                             alt="Icon Youtube">
@@ -72,6 +72,8 @@ export default {
 .col-7 {
     p {
         color: grey;
+        line-height: 30px;
+        padding-bottom: 10px;
     }
 
     button {
@@ -146,14 +148,20 @@ export default {
             margin: 100px 0;
 
             .obj-fit {
-                width: 500px;
+                max-width: 1000px;
                 box-shadow: 0px 5px 15px 1px rgb(174, 174, 174);
+                transition: all 1s ease;
+                cursor: pointer;
 
-                .position-absolute {
-                    width: 50px;
+                img.position-absolute {
+                    width: 100px;
                     left: 50%;
                     top: 50%;
                     transform: translate(-50%, -50%);
+                }
+                
+                &:hover {
+                    transform: scale(1.1)
                 }
             }
         }

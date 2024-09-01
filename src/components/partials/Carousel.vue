@@ -17,9 +17,9 @@ export default {
     <div class="bg-color py-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="m-0 fs-22 font-art pb-2">Testimonials</h2>
-                    <h2 class="fs-22 secondary-font mb-5">Why do people love me?</h2>
+                <div class="col-12 text-center fs-34">
+                    <h2 class="m-0 font-art pb-2">Testimonials</h2>
+                    <h2 class="secondary-font mb-5">Why do people love me?</h2>
                 </div>
             </div>
             <div class="row">

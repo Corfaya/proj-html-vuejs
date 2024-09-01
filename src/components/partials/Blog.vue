@@ -7,9 +7,9 @@ export default {
     <div id="blog" class="py-5 bg-images">
         <div class="container">
             <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="m-0 fs-22 font-art pb-2">Articles and Tips</h2>
-                    <h2 class="fs-22 secondary-font mb-5">Latest From The Blog</h2>
+                <div class="col-12 text-center fs-34">
+                    <h2 class="m-0 font-art pb-2">Articles and Tips</h2>
+                    <h2 class="secondary-font mb-5">Latest From The Blog</h2>
                 </div>
             </div>
             <div class="row">

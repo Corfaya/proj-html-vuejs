@@ -67,14 +67,6 @@ header {
       box-shadow: none;
     }
 
-    li {
-      margin: 0 10px;
-
-      a {
-        color: $black;
-      }
-    }
-
     i {
       color: #636060;
       margin: 0 10px;

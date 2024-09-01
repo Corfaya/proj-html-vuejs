@@ -28,10 +28,8 @@ export default {
 @use "../../style/partials/utilities" as *;
 
 .box-course {
-    width: 250px;
     margin: 0 auto;
     img {
-        width: 100%;
         cursor: pointer;
     }
     .text-orange {

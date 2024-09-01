@@ -22,9 +22,9 @@ export default {
         <div class="container position-relative">
             <div class="rotated-text position-absolute">Events</div>
             <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="m-0 fs-22 font-art pb-2">Upcoming Events</h2>
-                    <h2 class="fs-22 secondary-font mb-5">Let's Work Together</h2>
+                <div class="col-12 text-center fs-34">
+                    <h2 class="m-0 font-art pb-2">Upcoming Events</h2>
+                    <h2 class="secondary-font mb-5">Let's Work Together</h2>
                 </div>
             </div>
             <div class="row">

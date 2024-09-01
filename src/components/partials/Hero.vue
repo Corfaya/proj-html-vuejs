@@ -12,18 +12,18 @@ export default {
     <!-- BACKGROUND HERO -->
     <div class="bg-hero position-relative">
         <!-- IMAGES -->
-        <div class="obj-fit first"><img src="../../assets/img/artist-hero-image-01.jpg" alt=""></div>
-        <div class="obj-fit second"><img src="../../assets/img/artist-hero-image-02.jpg" alt=""></div>
-        <div class="obj-fit third"><img src="../../assets/img/artist-hero-image-04.jpg" alt=""></div>
+        <div class="obj-fit first"><img src="../../assets/img/artist-hero-image-01.jpg" alt="Hero images"></div>
+        <div class="obj-fit second"><img src="../../assets/img/artist-hero-image-02.jpg" alt="Hero images"></div>
+        <div class="obj-fit third"><img src="../../assets/img/artist-hero-image-04.jpg" alt="Hero images"></div>
         <!-- ICONS -->
-        <div class="d-flex flex-column align-items-center icons-box position-absolute">
-            <i v-for="jumbo, i in jumboIconsClass" :class="jumbo"></i>
+        <div class="d-flex flex-column align-items-center icons-box position-fixed">
+            <i v-for="jumbo, i in jumboIconsClass" :key="i" :class="['fs-24', jumbo]"></i>
         </div>
         <div class="container d-flex justify-content-center">
             <!-- TEXT -->
-            <div class="d-flex flex-column align-items-center hero-text-box">
-                <h1 class="m-0 fs-22">Hello, Im Matin</h1>
-                <h2 class="text-center fs-22">Artist Coaching And Mentoring Might Be for You</h2>
+            <div class="d-flex flex-column align-items-center hero-text-box fs-40">
+                <h1 class="m-0">Hello, Im Matin</h1>
+                <h2 class="text-center">Artist Coaching And Mentoring Might Be for You.</h2>
                 <button type="button" class="btn text-white fw-bold fs-14">
                     Get started Today
                 </button>
@@ -54,7 +54,6 @@ export default {
             z-index: 2;
             left: 80px;
             bottom: 60px;
-            filter: contrast(110%)
         }
 
         &.second,
@@ -77,14 +76,16 @@ export default {
 
     .icons-box {
         background-color: $white;
+        color: $white;
+        -webkit-text-stroke: 1px black;
         padding: 5px;
         border-radius: 8px;
         right: 0;
-        top: 100px;
-
-
+        top: 300px;
+        z-index: 9999;
+        box-shadow: 0px 2px 20px 3px rgb(174, 174, 174);
         i {
-            margin: 8px;;
+            margin: 12px 8px;
         }
     }
 
@@ -95,7 +96,7 @@ export default {
 
     .hero-text-box {
         gap: 10px;
-        max-width: 350px;
+        max-width: 500px;
 
         h1 {
             font-family: $artistic_font;
@@ -104,7 +105,7 @@ export default {
 
         h2 {
             font-weight: 700;
-            line-height: 30px;
+            line-height: 50px;
         }
 
         button {
