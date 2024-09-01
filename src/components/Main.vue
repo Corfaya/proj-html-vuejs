@@ -5,6 +5,7 @@ import Biography from './partials/Biography.vue';
 import Carousel from './partials/Carousel.vue';
 import OnlineCourses from './partials/CoursesSection.vue';
 import Blog from './partials/Blog.vue';
+import Events from './partials/Events.vue';
 
 export default {
     components: {
@@ -13,7 +14,8 @@ export default {
         Biography,
         Carousel,
         OnlineCourses,
-        Blog
+        Blog,
+        Events
     }
 }
 </script>
@@ -33,6 +35,7 @@ export default {
         <!-- Imgs positions section -->
         <Blog />
         <!-- Images Grid 2 -->
+         <Events />
     </main>
 </template>
 

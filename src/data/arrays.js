@@ -194,6 +194,37 @@ const courses = [
     }
 ]
 
+const events = [
+    {
+        src: "artist-event-04-250x300.jpg",
+        alt: "Evento 1",
+        date: "NOV 22, 2020",
+        title: "Storytelling Workshop",
+        location: "Texas, US"
+    },
+    {
+        src: "artist-event-03-250x300.jpg",
+        alt: "Evento 2",
+        date: "OCT 10, 2020",
+        title: "Painting Art Contest 2020",
+        location: "New York, US"
+    },
+    {
+        src: "artist-event-02-250x300.jpg",
+        alt: "Evento 3",
+        date: "NOV 23, 2020",
+        title: "International Art Fair 2020",
+        location: "Hamburg, Germany"
+    },
+    {
+        src: "artist-event-01-250x300.jpg",
+        alt: "Evento 4",
+        date: "DEC 15, 2020",
+        title: "Street Performance: Call for Artist",
+        location: "Illinois, US"
+    }
+]
+
 const jumboIconsClass = ["fa-solid fa-ruler-combined", "fa-regular fa-life-ring", "fa-solid fa-book", "fa-solid fa-cart-shopping"]
 
-export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses }
+export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses, events }
