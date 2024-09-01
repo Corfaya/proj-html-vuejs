@@ -36,8 +36,6 @@ export default {
         <Blog />
         <!-- Images Grid 2 -->
          <Events />
-
-        <!-- NEWSLETTER -->
     </main>
 </template>
 
