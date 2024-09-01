@@ -16,33 +16,72 @@ export default {
                     <h2 class="fs-22 secondary-font mb-5">Why do people love me?</h2>
                 </div>
             </div>
-            <Splide :options="{ rewind: true, type: 'loop', perPage: 3,  focus: 'center', pagination: true}">
-                
-                <SplideSlide>
-                    <div class="slide-box-style">
-                        <p class="fw-bolder">Prova del titolo</p>
-                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
-                        <div class="d-flex align-items-center gap-4">
-                            <div class="obj-fit">
-                                <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                            </div>
-                            <div class="testimonial">
-                                <p class="fw-bolder">Mina Hollace</p>
-                                <p class="text-secondary">/ Freelancer</p>
+            <div class="row">
+
+                <Splide :options="{ rewind: true, drag: 'free', type: 'loop', perPage: 3,  focus: 'center', pagination: true, gap: '2rem', breakpoints: {768: {perPage: 1}, 1024: {perPage: 2} }, autoplay: true, interval: 3000}">
+                    
+                    <SplideSlide>
+                        <div class="slide-box-style">
+                            <p class="fw-bolder">Prova del titolo</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="obj-fit">
+                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                                </div>
+                                <div class="testimonial">
+                                    <p class="fw-bolder">Mina Hollace</p>
+                                    <p class="text-secondary">/ Freelancer</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </SplideSlide>
-                <SplideSlide>
-                  <img src="https://placehold.co/400x400?text=2" alt="Sample 2">
-                </SplideSlide>
-                <SplideSlide>
-                    <img src="https://placehold.co/400x400?text=3" alt="Sample 2">
-                  </SplideSlide>
-                  <SplideSlide>
-                    <img src="https://placehold.co/400x400?text=4" alt="Sample 2">
-                  </SplideSlide>
-              </Splide>
+                    </SplideSlide>
+                    <SplideSlide>
+                        <div class="slide-box-style">
+                            <p class="fw-bolder">Prova del titolo</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="obj-fit">
+                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                                </div>
+                                <div class="testimonial">
+                                    <p class="fw-bolder">Mina Hollace</p>
+                                    <p class="text-secondary">/ Freelancer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </SplideSlide>
+                    <SplideSlide>
+                        <div class="slide-box-style">
+                            <p class="fw-bolder">Prova del titolo</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="obj-fit">
+                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                                </div>
+                                <div class="testimonial">
+                                    <p class="fw-bolder">Mina Hollace</p>
+                                    <p class="text-secondary">/ Freelancer</p>
+                                </div>
+                            </div>
+                        </div>
+                      </SplideSlide>
+                      <SplideSlide>
+                        <div class="slide-box-style">
+                            <p class="fw-bolder">Prova del titolo</p>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="obj-fit">
+                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                                </div>
+                                <div class="testimonial">
+                                    <p class="fw-bolder">Mina Hollace</p>
+                                    <p class="text-secondary">/ Freelancer</p>
+                                </div>
+                            </div>
+                        </div>
+                      </SplideSlide>
+                  </Splide>
+            </div>
         </div>
     </div>
 </template>
@@ -56,24 +95,41 @@ export default {
         font-family: $artistic_font;
         color: $sky;
     }
-    .slide-box-style {
-        background-color: $white;
-        border-radius: 5px;
-        padding: 30px;
-
-        .obj-fit {
-            width: 100px;
-            img {
-                width: 100%;
-                object-fit: contain;
-                border-radius: 50%;
-            }
-        }
+    .splide__arrows {
+        display: none;
     }
+
     .splide__slide {
         display: flex;
         justify-content: center;
+        opacity: 0.5;
+        width: 450px !important;
+        transition: all 0.3s ease;
+
+        &.is-active {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .slide-box-style {
+            background-color: $white;
+            border-radius: 5px;
+            padding: 30px;
+            width: 100%;
+            height: 300px;
+
+            .obj-fit {
+                width: 60px;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                    border-radius: 50%;
+                }
+            }
+        }
     }
+
 
     .splide:not(.is-overflow) .splide__pagination {
         display: flex;
@@ -81,8 +137,10 @@ export default {
 
     .splide__pagination {
         bottom: -30px;
+
         .splide__pagination__page {
             margin: 5px 10px;
+
             &.is-active {
                 background-color: $black;
             }
