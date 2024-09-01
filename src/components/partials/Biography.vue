@@ -78,6 +78,7 @@ export default {
         color: $orange_main;
         background-color: $orange_transp;
         padding: 10px 40px;
+        transition: all 0.5s;
 
         &:hover {
             background-color: $sky_transp;

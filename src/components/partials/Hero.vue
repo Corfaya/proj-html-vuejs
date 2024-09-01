@@ -111,6 +111,7 @@ export default {
             width: 200px;
             background-color: $orange_main;
             padding: 10px;
+            transition: all 0.5s;
 
             &:hover {
                 background-color: $sky;

@@ -32,6 +32,7 @@ export default {
     margin: 0 auto;
     img {
         width: 100%;
+        cursor: pointer;
     }
     .text-orange {
         color: $orange_main;
