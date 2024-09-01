@@ -228,6 +228,37 @@ const events2 = [
     }
 ]
 
+const testimonials = [
+    {
+        title: "High level of efficiency and scientific teaching methods",
+        review: "I am free to learn at my  own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+        nameTestimonial: "Mina Hollace",
+        role: "/ FreeLancer",
+        src: "artist-testimonial-avatar-04.jpg",
+    },
+    {
+        title: "Professional team of specialists and passionate mentors at reach",
+        review: "I need to get a certification for English proficiency and MaxCoach is my best choise. Their tutors are smart and professional when dealing with students.",
+        nameTestimonial: "Madley Pondor",
+        role: "/ IT Specialist",
+        src: "artist-testimonial-avatar-03.jpg",
+    },
+    {
+        title: "The MaxCoach team works really hard to ensure high quality",
+        review: "I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to be adopted for learners of all levels.",
+        nameTestimonial: "Luvic Dubble",
+        role: "/ Private Tutor",
+        src: "artist-testimonial-avatar-02.jpg",
+    },
+    {
+        title: "It's a choice of quality for people with special needs",
+        review: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+        nameTestimonial: "Florence Themes",
+        role: "/ Multimedia Admin",
+        src: "artist-testimonial-avatar-01.jpg",
+    }
+]
+
 const jumboIconsClass = ["fa-solid fa-ruler-combined", "fa-regular fa-life-ring", "fa-solid fa-book", "fa-solid fa-cart-shopping"]
 
-export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses, events1, events2 }
+export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses, events1, events2, testimonials }

@@ -1,10 +1,16 @@
 <script>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
+import { testimonials } from '../../data/arrays';
 export default {
     components: {
         Splide,
         SplideSlide
-    }
+    },
+    data() {
+        return {
+            testimonials
+        }
+    },
 }
 </script>
 <template>
@@ -18,69 +24,25 @@ export default {
             </div>
             <div class="row">
 
-                <Splide :options="{ rewind: true, drag: 'free', type: 'loop', perPage: 3,  focus: 'center', pagination: true, gap: '2rem', breakpoints: {768: {perPage: 1}, 1024: {perPage: 2} }, autoplay: true, interval: 3000}">
-                    
-                    <SplideSlide>
+                <Splide
+                    :options="{ rewind: true, drag: 'free', type: 'loop', perPage: 3, focus: 'center', pagination: true, gap: '2rem', breakpoints: { 768: { perPage: 1 }, 1024: { perPage: 2 } }, autoplay: true, interval: 3000 }">
+
+                    <SplideSlide v-for="(testimonial, index) in testimonials" :key="index">
                         <div class="slide-box-style">
-                            <p class="fw-bolder">Prova del titolo</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
+                            <p class="fw-bolder"> {{ testimonial.title }} </p>
+                            <p class="text-secondary"> {{ testimonial.review }} </p>
                             <div class="d-flex align-items-center gap-4">
                                 <div class="obj-fit">
-                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                                    <img :src="`./src/assets/img/${testimonial.src}`" alt="Testimonial">
                                 </div>
                                 <div class="testimonial">
-                                    <p class="fw-bolder">Mina Hollace</p>
-                                    <p class="text-secondary">/ Freelancer</p>
+                                    <p class="fw-bolder"> {{ testimonial.nameTestimonial }} </p>
+                                    <p class="text-secondary"> {{ testimonial.role }} </p>
                                 </div>
                             </div>
                         </div>
                     </SplideSlide>
-                    <SplideSlide>
-                        <div class="slide-box-style">
-                            <p class="fw-bolder">Prova del titolo</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
-                            <div class="d-flex align-items-center gap-4">
-                                <div class="obj-fit">
-                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                                </div>
-                                <div class="testimonial">
-                                    <p class="fw-bolder">Mina Hollace</p>
-                                    <p class="text-secondary">/ Freelancer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </SplideSlide>
-                    <SplideSlide>
-                        <div class="slide-box-style">
-                            <p class="fw-bolder">Prova del titolo</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
-                            <div class="d-flex align-items-center gap-4">
-                                <div class="obj-fit">
-                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                                </div>
-                                <div class="testimonial">
-                                    <p class="fw-bolder">Mina Hollace</p>
-                                    <p class="text-secondary">/ Freelancer</p>
-                                </div>
-                            </div>
-                        </div>
-                      </SplideSlide>
-                      <SplideSlide>
-                        <div class="slide-box-style">
-                            <p class="fw-bolder">Prova del titolo</p>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
-                            <div class="d-flex align-items-center gap-4">
-                                <div class="obj-fit">
-                                    <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                                </div>
-                                <div class="testimonial">
-                                    <p class="fw-bolder">Mina Hollace</p>
-                                    <p class="text-secondary">/ Freelancer</p>
-                                </div>
-                            </div>
-                        </div>
-                      </SplideSlide>
-                  </Splide>
+                </Splide>
             </div>
         </div>
     </div>
@@ -88,13 +50,16 @@ export default {
 <style lang="scss">
 @use "../../style/partials/vars" as *;
 @use "../../style/partials/utilities" as *;
+
 .bg-color {
     background-color: #FEF7F3;
     margin-top: 50px;
+
     .font-art {
         font-family: $artistic_font;
         color: $sky;
     }
+
     .splide__arrows {
         display: none;
     }
