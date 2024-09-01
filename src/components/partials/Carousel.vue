@@ -19,7 +19,19 @@ export default {
             <Splide :options="{ rewind: true, type: 'loop', perPage: 3,  focus: 'center', pagination: true}">
                 
                 <SplideSlide>
-                  <img src="https://placehold.co/400x400?text=1" alt="Sample 1">
+                    <div class="slide-box-style">
+                        <p class="fw-bolder">Prova del titolo</p>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores aperiam aliquam eos, corporis asperiores ullam, minus laboriosam dolorem, dolore possimus perferendis voluptatem autem. Fugit ipsam nisi quibusdam assumenda sed.</p>
+                        <div class="d-flex align-items-center gap-4">
+                            <div class="obj-fit">
+                                <img src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                            </div>
+                            <div class="testimonial">
+                                <p class="fw-bolder">Mina Hollace</p>
+                                <p class="text-secondary">/ Freelancer</p>
+                            </div>
+                        </div>
+                    </div>
                 </SplideSlide>
                 <SplideSlide>
                   <img src="https://placehold.co/400x400?text=2" alt="Sample 2">
@@ -44,6 +56,25 @@ export default {
         font-family: $artistic_font;
         color: $sky;
     }
+    .slide-box-style {
+        background-color: $white;
+        border-radius: 5px;
+        padding: 30px;
+
+        .obj-fit {
+            width: 100px;
+            img {
+                width: 100%;
+                object-fit: contain;
+                border-radius: 50%;
+            }
+        }
+    }
+    .splide__slide {
+        display: flex;
+        justify-content: center;
+    }
+
     .splide:not(.is-overflow) .splide__pagination {
         display: flex;
     }
