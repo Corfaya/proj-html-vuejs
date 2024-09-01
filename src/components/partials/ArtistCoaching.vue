@@ -79,11 +79,6 @@ export default {
             color: $sky;
         }
 
-        .secondary-font {
-            font-weight: 700;
-            line-height: 30px;
-        }
-
     }
 
     .col-3 {

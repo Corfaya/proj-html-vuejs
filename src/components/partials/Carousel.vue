@@ -44,10 +44,6 @@ export default {
         font-family: $artistic_font;
         color: $sky;
     }
-    .secondary-font {
-        font-weight: 700;
-        line-height: 30px;
-    }
     .splide:not(.is-overflow) .splide__pagination {
         display: flex;
     }

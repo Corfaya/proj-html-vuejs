@@ -12,8 +12,8 @@ export default {
     <!-- BACKGROUND HERO -->
     <div class="bg-hero position-relative">
         <!-- IMAGES -->
-        <div class="obj-fit first"><img src="../../assets/img/artist-course-05-480x480.jpg" alt=""></div>
-        <div class="obj-fit second"><img src="../../assets/img/artist-course-08-480x480.jpg" alt=""></div>
+        <div class="obj-fit first"><img src="../../assets/img/artist-hero-image-01.jpg" alt=""></div>
+        <div class="obj-fit second"><img src="../../assets/img/artist-hero-image-02.jpg" alt=""></div>
         <div class="obj-fit third"><img src="../../assets/img/artist-hero-image-04.jpg" alt=""></div>
         <!-- ICONS -->
         <div class="d-flex flex-column align-items-center icons-box position-absolute">

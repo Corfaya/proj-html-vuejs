@@ -3,7 +3,7 @@ import Hero from './partials/Hero.vue';
 import ArtistCoaching from './partials/ArtistCoaching.vue';
 import Biography from './partials/Biography.vue';
 import Carousel from './partials/Carousel.vue';
-import OnlineCourses from './partials/OnlineCourses.vue';
+import OnlineCourses from './partials/CoursesSection.vue';
 
 export default {
     components: {
