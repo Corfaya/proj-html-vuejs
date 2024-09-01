@@ -1,6 +1,20 @@
 <script>
-export default {
+import EventsList1 from './EventsList1.vue';
+import EventsList2 from './EventsList2.vue';
+import { events1 } from '../../data/arrays';
+import { events2 } from '../../data/arrays';
 
+export default {
+    components: {
+        EventsList1,
+        EventsList2
+    },
+    data() {
+        return {
+            events1,
+            events2
+        }
+    },
 }
 </script>
 <template>
@@ -13,21 +27,13 @@ export default {
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <div class="d-flex">
-                        <div class="img-fit">
-                            <img src="../../assets/img/artist-event-04-250x300.jpg" alt="">
-                        </div>
-                        <div class="event-text d-flex flex-column justify-content-center ms-5">
-                            <p class="date-style">NOV 22, 2020</p>
-                            <p class="title">Storytelling for</p>
-                            <p>
-                                <i class="fa-solid fa-location-dot"></i>
-                                dove
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <EventsList1 v-for="(e, i) in events1" :key="`ev-1.-${i}`" :event="e" />
+            </div>
+            <div class="row">
+                <EventsList2 v-for="(e, i) in events2" :key="`ev-2.-${i}`" :event="e" />
+            </div>
+            <div class="row">
+                
                 <div class="col-6"></div>
                 <div class="col-6"></div>
                 <div class="col-6"></div>

@@ -194,7 +194,7 @@ const courses = [
     }
 ]
 
-const events = [
+const events1 = [
     {
         src: "artist-event-04-250x300.jpg",
         alt: "Evento 1",
@@ -208,7 +208,10 @@ const events = [
         date: "OCT 10, 2020",
         title: "Painting Art Contest 2020",
         location: "New York, US"
-    },
+    }
+]
+
+const events2 = [
     {
         src: "artist-event-02-250x300.jpg",
         alt: "Evento 3",
@@ -227,4 +230,4 @@ const events = [
 
 const jumboIconsClass = ["fa-solid fa-ruler-combined", "fa-regular fa-life-ring", "fa-solid fa-book", "fa-solid fa-cart-shopping"]
 
-export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses, events }
+export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses, events1, events2 }
