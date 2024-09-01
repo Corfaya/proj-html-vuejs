@@ -53,7 +53,7 @@ export default {
     }
 
     .splide__pagination {
-        bottom: -50px;
+        bottom: -30px;
         .splide__pagination__page {
             margin: 5px 10px;
             &.is-active {

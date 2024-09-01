@@ -3,13 +3,15 @@ import Hero from './partials/Hero.vue';
 import ArtistCoaching from './partials/ArtistCoaching.vue';
 import Biography from './partials/Biography.vue';
 import Carousel from './partials/Carousel.vue';
+import OnlineCourses from './partials/OnlineCourses.vue';
 
 export default {
     components: {
         Hero,
         ArtistCoaching,
         Biography,
-        Carousel
+        Carousel,
+        OnlineCourses
     }
 }
 </script>
@@ -25,7 +27,7 @@ export default {
         <!-- Carousel -->
         <Carousel />
         <!-- Images Grid -->
-
+        <OnlineCourses />
         <!-- Imgs positions section -->
 
         <!-- Images Grid 2 -->
