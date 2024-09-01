@@ -19,7 +19,8 @@ export default {
 </script>
 <template>
     <div class="bg-white py-5">
-        <div class="container">
+        <div class="container position-relative">
+            <div class="rotated-text position-absolute">Events</div>
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="m-0 fs-22 font-art pb-2">Upcoming Events</h2>
@@ -45,6 +46,15 @@ export default {
 @use "../../style/partials/vars" as *;
 @use "../../style/partials/utilities" as *;
 .container {
+    .rotated-text {
+        left: 0;
+        top: 50%;
+        transform: translate(-70%, -50%) rotate(90deg);
+        font-size: 100px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px #f2ebe6;
+    }
     .font-art {
         font-family: $artistic_font;
         color: $sky;

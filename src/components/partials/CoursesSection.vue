@@ -13,7 +13,8 @@ export default {
 }
 </script>
 <template>
-    <div class="bg-white py-5">
+    <div class="bg-white  position-relative py-5">
+        <div class="rotated-text position-absolute">Courses</div>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -49,6 +50,16 @@ export default {
     background-repeat: no-repeat;
     background-size: 400px;
     background-position: -200px 500px;
+
+    .rotated-text {
+        right: 0;
+        top: 50%;
+        transform: translate(30%, -50%) rotate(-90deg);
+        font-size: 100px;
+        font-weight: bold;
+        color: transparent;
+        -webkit-text-stroke: 1px #f2ebe6;
+    }
 
     .font-art {
         font-family: $artistic_font;
