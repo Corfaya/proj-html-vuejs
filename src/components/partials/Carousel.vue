@@ -36,8 +36,8 @@ export default {
                                     <img :src="`./src/assets/img/${testimonial.src}`" alt="Testimonial">
                                 </div>
                                 <div class="testimonial">
-                                    <p class="fw-bolder"> {{ testimonial.nameTestimonial }} </p>
-                                    <p class="text-secondary"> {{ testimonial.role }} </p>
+                                    <p class="fw-bolder fs-14 mb-1"> {{ testimonial.nameTestimonial }} </p>
+                                    <p class="text-secondary fs-14"> {{ testimonial.role }} </p>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +84,7 @@ export default {
             height: 300px;
 
             .obj-fit {
-                width: 60px;
+                width: 70px;
 
                 img {
                     width: 100%;
@@ -101,13 +101,16 @@ export default {
     }
 
     .splide__pagination {
-        bottom: -30px;
+        bottom: -3em;
 
         .splide__pagination__page {
             margin: 5px 10px;
 
             &.is-active {
-                background-color: $black;
+                background-color: black;
+                &:hover {
+                    background-color: $orange_main;
+                }
             }
         }
     }
