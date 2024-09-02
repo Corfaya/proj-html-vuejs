@@ -1,39 +1,64 @@
 const listItems = [
     {
         item: "Home",
-        dropdown1: "Item",
-        dropdown2: "Action",
-        dropdown3: "Something else"
+        dropdownItems: [
+            "MaxCoach Education",
+            "Course Portal",
+            "Distant Learning",
+            "Multimedia Pedagogy",
+            "Modern Schooling",
+            "Remote Training",
+            "Health Coaching"
+        ]
+        // dropdown1: "Item",
+        // dropdown2: "Action",
+        // dropdown3: "Something else"
     },
     {
         item: "Pages",
-        dropdown1: "Item",
-        dropdown2: "Action",
-        dropdown3: "Something else"
+        dropdownItems: [
+            "Start Here",
+            "Success Story",
+            "About me",
+            "Contact me",
+            "Privacy Policy",
+            "Terms of Service"
+        ]
     },
     {
         item: "Courses",
-        dropdown1: "Item",
-        dropdown2: "Action",
-        dropdown3: "Something else"
+        dropdownItems: [
+            "Course Grid 01",
+            "Course Grid 02",
+            "Course Grid 03",
+            "Checkout"
+        ]
     },
     {
         item: "Features",
-        dropdown1: "Item",
-        dropdown2: "Action",
-        dropdown3: "Something else"
+        dropdownItems: [
+            "Events",
+            "Zoom Meetings"
+        ]
     },
     {
         item: "Blog",
-        dropdown1: "Item",
-        dropdown2: "Action",
-        dropdown3: "Something else"
+        dropdownItems: [
+            "Blog Grid",
+            "Blog Masonry",
+            "Blog Classic",
+            "Blog List"
+        ]
     },
     {
         item: "Shop",
-        dropdown1: "Item",
-        dropdown2: "Action",
-        dropdown3: "Something else"
+        dropdownItems: [
+            "Shop Left Sidebar",
+            "Shop Right Sidebar",
+            "Cart",
+            "Wishlist",
+            "Single Product"
+        ]
     }
 ]
 
