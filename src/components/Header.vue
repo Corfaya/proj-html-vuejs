@@ -16,14 +16,24 @@ export default {
       socials
     }
   },
+  created() {
+    window.addEventListener("scroll", this.scrollEffect)
+  },
+    methods: {
+      scrollEffect() {
+            const header = document.querySelector("header")
+            header.classList.toggle("scrolling", window.scrollY > 100)
+        }
+    }
 }
 </script>
 
 <template>
-  <header>
+  
     <!-- BANNER -->
     <Banner />
     <!-- NAVBAR -->
+    <header>
     <div class="container">
       <nav class="navbar navbar-expand-lg py-3">
         <div class="container-fluid">
@@ -56,6 +66,17 @@ export default {
 @use "../style/partials/utilities" as *;
 
 header {
+  position:relative;
+  transition: all 2s ease;
+  &.scrolling {
+    position: fixed;
+    top: 0;
+    z-index: 10001;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0 3px 8px rgb(177, 177, 177);
+    behavior: smooth;
+}
   nav {
     .navbar-brand {
       img {

@@ -30,7 +30,7 @@ export default {
         const hours = Math.floor((toEnd % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((toEnd % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((toEnd % (1000 * 60)) / 1000);
-        console.log(days, hours, minutes, seconds)
+        //console.log(days, hours, minutes, seconds)
 
         this.countdown = `${this.timeFormat(days)}:${this.timeFormat(hours)}:${this.timeFormat(minutes)}:${this.timeFormat(seconds)}`
         return

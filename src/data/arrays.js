@@ -10,9 +10,6 @@ const listItems = [
             "Remote Training",
             "Health Coaching"
         ]
-        // dropdown1: "Item",
-        // dropdown2: "Action",
-        // dropdown3: "Something else"
     },
     {
         item: "Pages",
@@ -152,6 +149,37 @@ const instagramPhotos = [
     }
 ]
 
+const offers = [
+    {
+        imgBoxClasses: "d-flex my-5",
+        src: "artist-box-image-01.png",
+        alt: "Online courses image: leaf",
+        h5: "Online Courses",
+        paragraph: "Online art coaching now offers you a very powerful way to redesign your artist mind."
+    },
+    {
+        imgBoxClasses: "d-flex my-5 pt-5",
+        src: "artist-box-image-02.png",
+        alt: "Online courses image: rainbow",
+        h5: "One to One",
+        paragraph: "Getting the necessary clarity about the current statee to help you improve your ability."
+    },
+    {
+        imgBoxClasses: "d-flex my-5",
+        src: "artist-box-image-03.png",
+        alt: "Online courses image: rain",
+        h5: "Anywhere",
+        paragraph: "Access to valuable and portable program which allow you to setup and live anywhere you want."
+    },
+    {
+        imgBoxClasses: "d-flex my-5 pt-5",
+        src: "artist-box-image-04.png",
+        alt: "Online courses image: eye",
+        h5: "On Time",
+        paragraph: "Punctuality is our top priority because it's an essential criteria to assess a program quality."
+    }
+]
+
 const courses = [
     {
         src: "artist-course-08-480x480.jpg",
@@ -286,4 +314,4 @@ const testimonials = [
 
 const jumboIconsClass = ["fa-solid fa-ruler-combined", "fa-regular fa-life-ring", "fa-solid fa-book", "fa-solid fa-cart-shopping"]
 
-export { listItems, socials, listsFooter, instagramPhotos, jumboIconsClass, courses, events1, events2, testimonials }
+export { listItems, listsFooter, socials, instagramPhotos, offers, courses, events1, events2, testimonials, jumboIconsClass }

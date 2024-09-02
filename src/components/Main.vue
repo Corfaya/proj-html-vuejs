@@ -49,7 +49,7 @@ export default {
 </script>
 
 <template>
-    <main class="my-3">
+    <main>
         <!-- HERO -->
         <Hero />
         <!-- First section -->
