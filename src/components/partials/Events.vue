@@ -18,9 +18,13 @@ export default {
 }
 </script>
 <template>
-    <div class="bg-white py-5">
-        <div class="container position-relative">
-            <div class="rotated-text position-absolute">Events</div>
+    <div class="py-5 position-relative">
+        <div class="background-decoration position-absolute">
+            <img src="../../assets/img/artist-shape-02.png" alt="Decoration shape">
+        </div>
+        <div class="rotated-text position-absolute">Events</div>
+        <div class="container">
+            
             <div class="row">
                 <div class="col-12 text-center fs-34">
                     <h2 class="m-0 font-art pb-2">Upcoming Events</h2>
@@ -45,16 +49,26 @@ export default {
 <style lang="scss" scoped>
 @use "../../style/partials/vars" as *;
 @use "../../style/partials/utilities" as *;
-.container {
-    .rotated-text {
-        left: 0;
-        top: 50%;
-        transform: translate(-70%, -50%) rotate(90deg);
-        font-size: 100px;
-        font-weight: bold;
-        color: transparent;
-        -webkit-text-stroke: 1px #f2ebe6;
+.background-decoration {
+    left: -190px;
+    bottom: 0;
+    img {
+        width: 600px;
+        transform: rotate(-90deg)
     }
+}
+
+.rotated-text {
+    left: 180px;
+    top: 50%;
+    z-index: -1;
+    font-size: 150px;
+    transform: translate(-70%, -50%) rotate(90deg);
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px #f2ebe6;
+}
+.container {
     .font-art {
         font-family: $artistic_font;
         color: $sky;

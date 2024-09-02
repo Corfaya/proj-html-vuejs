@@ -13,7 +13,10 @@ export default {
 }
 </script>
 <template>
-    <div class="bg-white  position-relative py-5">
+    <div class="position-relative py-5">
+        <div class="background-decoration position-absolute">
+            <img src="../../assets/img/artist-shape-01.png" alt="Decoration shape">
+        </div>
         <div class="rotated-text position-absolute">Courses</div>
         <div class="container">
             <div class="row">
@@ -45,17 +48,21 @@ export default {
 @use "../../style/partials/vars" as *;
 @use "../../style/partials/utilities" as *;
 
-.bg-white {
-    background-image: url("../../assets/img/artist-shape-01.png");
-    background-repeat: no-repeat;
-    background-size: 400px;
-    background-position: -200px 500px;
 
+    .background-decoration {
+        left: -100px;
+        bottom: 50px;
+        img {
+            width: 400px;
+            filter: brightness(0) saturate(100%) invert(39%) sepia(73%) saturate(4867%) hue-rotate(179deg) brightness(93%) contrast(102%);
+        }
+    }
     .rotated-text {
         right: 0;
         top: 50%;
+        z-index: -1;
         transform: translate(30%, -50%) rotate(-90deg);
-        font-size: 100px;
+        font-size: 150px;
         font-weight: bold;
         color: transparent;
         -webkit-text-stroke: 1px #f2ebe6;
@@ -65,14 +72,13 @@ export default {
         font-family: $artistic_font;
         color: $sky;
     }
-}
+
 
 button {
     color: $orange_main;
     background-color: $orange_transp;
     padding: 10px 40px;
     transition: all 0.5s;
-
     &:hover {
         background-color: $sky_transp;
         color: $black;

@@ -139,7 +139,7 @@ export default {
     }
 
     .rounded-circle {
-        border: 7px solid $circle;
+        border: 15px solid $circle;
         width: 100px;
         aspect-ratio: 1 / 1;
         position: absolute;

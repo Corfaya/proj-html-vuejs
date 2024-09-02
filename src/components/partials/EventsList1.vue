@@ -26,11 +26,18 @@ export default {
 @use "../../style/partials/vars" as *;
 @use "../../style/partials/utilities" as *;
 
-.container {
-    .font-art {
-        font-family: $artistic_font;
-        color: $sky;
+.img-fit {
+    max-width: 250px;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+        width: 100%;
+        transition: all 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
+}
 
     .event-text {
         color: grey;
@@ -45,5 +52,4 @@ export default {
             font-size: 20px;
         }
     }
-}
 </style>

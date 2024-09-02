@@ -4,7 +4,11 @@ export default {
 }
 </script>
 <template>
-    <div id="blog" class="py-5 bg-images">
+    <div id="blog" class="py-5 bg-images position-relative">
+        <div class="line position-absolute">
+            <img src="../../assets/img/maxcoach-shape-14.png" alt="Background line">
+        </div>
+        <div class="rounded-circle position-absolute"></div>
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center fs-34">
@@ -87,9 +91,29 @@ export default {
 
 .bg-images {
     background-color: $grey;
-    background-image: url("../../assets/img/maxcoach-shape-14.png"),  url("../../assets/img/maxcoach-shape-12.png");
+    background-image: url("../../assets/img/maxcoach-shape-12.png");
     background-repeat: no-repeat;
-    background-position: center, 30% 200px;
+    background-position: 30% 200px;
+
+    .line {
+        top: 50%;
+        transform: translate(0, -50%);
+
+        img {
+            filter: brightness(0) saturate(100%) invert(87%) sepia(14%) saturate(940%) hue-rotate(324deg) brightness(97%) contrast(91%);
+        }
+    }
+
+    .rounded-circle {
+        border: 15px solid $circle;
+        width: 100px;
+        aspect-ratio: 1 / 1;
+        position: absolute;
+        z-index: 1000;
+        left: 50px;
+        top: 100px;
+    }
+
     .container {
         .font-art {
             font-family: $artistic_font;
@@ -117,8 +141,18 @@ export default {
                 min-width: 400px;
                 margin: 0 auto;
 
-                img {
-                    width: 100%;
+                .img-box {
+                    cursor:pointer;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        transition: all 2s;
+
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
                 }
 
                 .text-blog {
@@ -156,13 +190,21 @@ export default {
                 }
 
                 .img-box {
+                    cursor:pointer;
                     width: 100%;
                     height: 230px;
+                    overflow: hidden;
 
                     img {
+                        width: 100%;
                         height: 100%;
                         object-fit: cover;
                         object-position: bottom;
+                        transition: all 2s;
+
+                        &:hover {
+                            transform: scale(1.3);
+                        }
                     }
                 }
 
@@ -188,9 +230,29 @@ export default {
             p {
                 color: grey;
                 font-size: 12px;
+
                 a {
                     color: $orange_main;
                     font-weight: 700;
+                    margin-left: 5px;
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        width: 30%;
+                        color: grey;
+                        position: absolute;
+                        left: 0;
+                        bottom: -3px;
+                        border-width: 0 0 1px 0;
+                        border-style: solid;
+                        transition: all 0.3s ease-in;
+                    }
+
+                    &:hover:after {
+                        color: $orange_main;
+                        width: 100%;
+                    }
                 }
             }
         }
