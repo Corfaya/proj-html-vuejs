@@ -2,59 +2,143 @@ const listItems = [
     {
         item: "Home",
         dropdownItems: [
-            "MaxCoach Education",
-            "Course Portal",
-            "Distant Learning",
-            "Multimedia Pedagogy",
-            "Modern Schooling",
-            "Remote Training",
-            "Health Coaching"
+            {
+                text: "MaxCoach Education",
+                badge: true
+            },
+            {
+                text: "Course Portal",
+                badge: false
+            },
+            {
+                text: "Distant Learning",
+                badge: true
+            },
+            {
+                text: "Multimedia Pedagogy",
+                badge: false
+            },
+            {
+                text: "Modern Schooling",
+                badge: false
+            },
+            {
+                text: "Remote Training",
+                badge: false
+            },
+            {
+                text: "Health Coaching",
+                badge: true
+            }
         ]
     },
     {
         item: "Pages",
         dropdownItems: [
-            "Start Here",
-            "Success Story",
-            "About me",
-            "Contact me",
-            "Privacy Policy",
-            "Terms of Service"
+            {
+                text: "Start Here",
+                badge: false
+            },
+            {
+                text: "Success Story",
+                badge: true
+            },
+            {
+                text: "About me",
+                badge: false
+            },
+            {
+                text: "Contact me",
+                badge: false
+            },
+            {
+                text: "Privacy Policy",
+                badge: false
+            },
+            {
+                text: "Terms of Service",
+                badge: false
+            }
         ]
     },
     {
         item: "Courses",
         dropdownItems: [
-            "Course Grid 01",
-            "Course Grid 02",
-            "Course Grid 03",
-            "Checkout"
+            {
+                text: "Course Grid 01",
+                badge: false
+            },
+            {
+                text: "Course Grid 02",
+                badge: false
+            },
+            {
+                text: "Course Grid 03",
+                badge: true
+            },
+            {
+                text: "Checkout",
+                badge: false
+            }
         ]
     },
     {
         item: "Features",
         dropdownItems: [
-            "Events",
-            "Zoom Meetings"
+            {
+                text: "Events",
+                badge: false
+            },
+            {
+                text: "Zoom Meetings",
+                badge: false
+            }
         ]
     },
     {
         item: "Blog",
         dropdownItems: [
-            "Blog Grid",
-            "Blog Masonry",
-            "Blog Classic",
-            "Blog List"
+            {
+                text: "Blog Grid",
+                badge: false
+            },
+            {
+                text: "Blog Masonry",
+                badge: false
+            },
+            {
+                text: "Blog Classic",
+                badge: false
+            },
+            {
+                text: "Blog List",
+                badge: false
+            }
         ]
     },
     {
         item: "Shop",
         dropdownItems: [
-            "Shop Left Sidebar",
-            "Shop Right Sidebar",
-            "Cart",
-            "Wishlist",
-            "Single Product"
+            {
+                text: "Shop Left Sidebar",
+                badge: false
+            },
+            {
+                text: "Shop Right Sidebar",
+                badge: false
+            },
+            {
+                text: "Cart",
+                badge: false
+            },
+            {
+                text: "Wishlist",
+                badge: false
+            },
+            {
+                text: "Single Product",
+                badge: false
+            }
         ]
     }
 ]

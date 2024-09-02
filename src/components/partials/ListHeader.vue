@@ -12,7 +12,9 @@ export default {
         </a>
         <ul class="dropdown-menu">
             <li v-for="(dropdown, i) in list.dropdownItems" :key="`dr-d-${i}`">
-                <a class="fs-16 dropdown-item" href="#"> {{ dropdown }} </a>
+                <a class="fs-16 dropdown-item" href="#"> {{ dropdown.text }} 
+                    <span v-if="dropdown.badge" class="badge text-white ms-2 text-uppercase">Hot</span>
+                </a>
             </li>
             <!-- <li><a class="fs-16 dropdown-item" href="#"> {{ list.dropdown2 }} </a></li>
             <li><a class="fs-16 dropdown-item" href="#"> {{ list.dropdown3 }} </a></li> -->
@@ -38,6 +40,9 @@ li.nav-item {
     border-bottom: 5px solid $orange-main;
     li {
         padding: 8px 0;
+        .badge {
+            background-image: linear-gradient(45deg, #FE378C 0%, #FE5B34 100%);;
+        }
     }
 }
 
