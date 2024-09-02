@@ -14,7 +14,7 @@ export default {
 }
 </script>
 <template>
-    <div class="bg-color py-5">
+    <div class="bg-color">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center fs-34">
@@ -53,7 +53,7 @@ export default {
 
 .bg-color {
     background-color: #FEF7F3;
-    margin-top: 50px;
+    padding: 50px 0 100px 0;
 
     .font-art {
         font-family: $artistic_font;

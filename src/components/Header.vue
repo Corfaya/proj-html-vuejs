@@ -42,7 +42,7 @@ export default {
             </ul>
           </div>
           <!-- Dynamic social list -->
-          <div class="d-none d-lg-flex" role="search">
+          <div class="d-none d-md-flex" role="search">
             <Socials v-for="(soc, i) in socials" :key="`s-${i}`" :socialIcon="soc"/>
           </div>
         </div>

@@ -41,8 +41,8 @@ export default {
     padding: 200px 0;
     background-image: url("../../assets/img/artist-shape-01.png"), url("../../assets/img/artist-shape-02-300x162.png"), url("../../assets/img/artist-hero-image-03.png"), url("../../assets/img/artist-shape-04.png"), url("../../assets/img/artist-shape-03.png"), url("../../assets/img/artist-shape-05.png");
     background-repeat: no-repeat;
-    background-position: right, left top, left 500px bottom 10%, right 5% top 20%, left, right 80px bottom;
-    background-size: contain, 900px 400px, 10%, 100px, 300px, 250px;
+    background-position: right, left top, left 400px bottom, right 5% top 20%, left, right 80px bottom;
+    background-size: contain, 900px 400px, 200px, 100px, 300px, 250px;
 
     .obj-fit {
         position: absolute;
@@ -58,9 +58,8 @@ export default {
 
         &.second,
         &.third {
-            max-width: 200px;
-            height: 270px;
-            z-index: 1;
+            max-width: 280px;
+            height: 350px;
         }
 
         &.second {
