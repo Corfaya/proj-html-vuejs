@@ -35,7 +35,10 @@ export default {
         // smooth effect for return on top of the webpage
         smoothScrollY() {
             window.scrollTo(
-                { top: 0, behavior: 'smooth' }
+                {
+                    top: 0,
+                    behavior: 'smooth'
+                }
             );
         }
     },
